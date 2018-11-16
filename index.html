@@ -3,17 +3,19 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <title>VikingSchism's Incremental Game</title>
   </head>
   <body class="w3-light-gray">
     <div class="w3-row">
-      <div class="w3-third"></div>
+      <div class="w3-third">.</div>
 
       <div class="w3-third">
         <div class="w3-container w3-display-topmiddle">
-            <h2 id ="display" class="w3-text-dark-grey">0</h2>
+            <h1>Incremental Game</h1>
+            <h2 id="display" class="w3-text-dark-gray w3-center">0</h2>
         </div>
 
         <div class="w3-container w3-display-middle">
@@ -23,8 +25,11 @@
         </div>
       </div>
 
-      <div class="w3-third">
-          
+      <div class="w3-third" style="float:right;">
+          <div class="w3-card w3-gray hidden" id="auto-clicker-card" style="width: 33%; margin: auto;">
+            Auto-Clicker: <span id="auto-clicker">0</span> <br>
+            Cost: <span id="auto-clicker-cost">10</span>
+          </div>
       </div>
     </div>
   </body>
